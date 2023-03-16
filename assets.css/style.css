@@ -26,7 +26,7 @@ linear-gradient()> =
 #box1 {
   width: 100vw;
   height: 50vh;
-  background: linear-gradient(45deg, rgba(83, 145, 101,1) 30%, rgba(63, 73, 127,0.9));
+  background: linear-gradient(100deg, rgba(83, 145, 101,1) 30%, rgba(247, 192, 74, 0.7), rgba(63, 73, 127,0.9));
 }
 
 /* simple linearGradient */
