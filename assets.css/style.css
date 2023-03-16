@@ -1,0 +1,75 @@
+/* GRADIENT:
+
+
+linear-gradient()> =  
+    linear-gradient( [ <angle> | to <side-or-corner> ]? , <color-stop-list> )  
+
+<side-or-corner> = 
+  [ left | right ]  ||
+  [ top | bottom ]  
+
+<color-stop-list> = 
+  <linear-color-stop> , [ <linear-color-hint>? , <linear-color-stop> ]#  
+
+<linear-color-stop> = 
+  <color>               &&
+  <length-percentage>?  
+
+<linear-color-hint> = 
+  <length-percentage>  
+
+<length-percentage> = 
+  <length>      |
+  <percentage>   */
+
+/* linearGradient + angle + rgba transparency + fading percentage % */
+#box1 {
+  width: 100vw;
+  height: 50vh;
+  background: linear-gradient(45deg, rgba(83, 145, 101,1) 30%, rgba(63, 73, 127,0.9));
+}
+
+/* simple linearGradient */
+#box2{
+  width: 100vw;
+  height: 50vh;
+  background: linear-gradient(35deg,#e66465, #9198e5);
+}
+
+/* simple linearGradient */
+#box3 {
+  width: 100vw;
+  height: 50vh;
+  background: linear-gradient(135deg, orange 60%, cyan);
+}
+
+
+/* Color stops should be listed in ascending order. Subsequent color stops of lower value will override the value of the previous color stop creating a hard transition. The following changes from red to yellow at the 40% mark, and then transitions from yellow to blue over 25% of the gradient */
+
+
+/* Multi-position color stop are allowed. A color can be declared as two adjacent color stops by including both positions in the CSS declaration. The following three gradients are equivalent:
+to right */
+#box4{
+  width: 100vw;
+  height: 50vh;
+  background: linear-gradient(to right, red 0%, orange 10%, orange 30%, yellow 50%, yellow 70%, green 90%, green 100%);
+}
+
+/* linear-gradient 
+to left*/
+#box5{
+  width: 100vw;
+  height: 50vh;
+  background: linear-gradient(to left, red, orange 10% 30%, yellow 50% 70%, green 90%);
+}
+
+/* linear-gradient 
+to top*/
+#box6{
+  width: 100vw;
+  height: 50vh;
+  background: linear-gradient(to top, red 0%, orange 10% 30%, yellow 50% 70%, green 90% 100%);
+}
+
+/* By default, if there is no color with a 0% stop, the first color declared will be at that point. Similarly, the last color will continue to the 100% mark, or be at the 100% mark if no length has been declared on that last stop. */
+
