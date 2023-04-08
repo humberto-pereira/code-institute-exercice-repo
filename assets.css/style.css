@@ -79,3 +79,28 @@ to top*/
 
 /* By default, if there is no color with a 0% stop, the first color declared will be at that point. Similarly, the last color will continue to the 100% mark, or be at the 100% mark if no length has been declared on that last stop. */
 
+
+/*Vasilis' Section start*/
+
+#vasilis {
+  display: flex;
+  width: 100rem;
+  height: 50rem;
+  border: 2px solid red;
+  
+}
+
+.vas-inner {
+  margin: auto;
+  background: linear-gradient(to right, #4fc4cf, #5d3f96, #a34da1, #4ea3ad);
+  width: 90%;
+  height: 10rem;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 8rem;
+}
+
+.vas-inner a {
+  color: #fff;
+  
+}
